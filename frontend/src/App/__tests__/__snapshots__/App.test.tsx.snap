@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders SearchForm and Alert if there are no places found 1`] = `
+<Container
+  className="mb-3"
+  fluid={true}
+>
+  <Row
+    noGutters={false}
+  >
+    <Col
+      lg={
+        Object {
+          "offset": 3,
+          "span": 6,
+        }
+      }
+      md={
+        Object {
+          "offset": 2,
+          "span": 8,
+        }
+      }
+    >
+      <SearchForm
+        handleSubmit={[MockFunction]}
+      />
+      <Alert
+        closeLabel="Close alert"
+        show={true}
+        transition={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "appear": false,
+              "in": false,
+              "mountOnEnter": false,
+              "timeout": 300,
+              "unmountOnExit": false,
+            },
+            "displayName": "Fade",
+            "render": [Function],
+          }
+        }
+        variant="info"
+      >
+        There are no places related to your search
+      </Alert>
+    </Col>
+  </Row>
+</Container>
+`;
+
+exports[`App component renders SearchForm and Alert if there is an error 1`] = `
+<Container
+  className="mb-3"
+  fluid={true}
+>
+  <Row
+    noGutters={false}
+  >
+    <Col
+      lg={
+        Object {
+          "offset": 3,
+          "span": 6,
+        }
+      }
+      md={
+        Object {
+          "offset": 2,
+          "span": 8,
+        }
+      }
+    >
+      <SearchForm
+        handleSubmit={[MockFunction]}
+      />
+      <Alert
+        closeLabel="Close alert"
+        show={true}
+        transition={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "appear": false,
+              "in": false,
+              "mountOnEnter": false,
+              "timeout": 300,
+              "unmountOnExit": false,
+            },
+            "displayName": "Fade",
+            "render": [Function],
+          }
+        }
+        variant="danger"
+      >
+        Something failed
+      </Alert>
+    </Col>
+  </Row>
+</Container>
+`;
+
+exports[`App component renders SearchForm and places list if there are places 1`] = `
+<Container
+  className="mb-3"
+  fluid={true}
+>
+  <Row
+    noGutters={false}
+  >
+    <Col
+      lg={
+        Object {
+          "offset": 3,
+          "span": 6,
+        }
+      }
+      md={
+        Object {
+          "offset": 2,
+          "span": 8,
+        }
+      }
+    >
+      <SearchForm
+        handleSubmit={[MockFunction]}
+      />
+      <PlacesList
+        places={
+          Array [
+            Object {
+              "address": "mock-address",
+              "id": "mock-id",
+              "name": "mock-name",
+              "provider": "mock-provider",
+            },
+          ]
+        }
+      />
+    </Col>
+  </Row>
+</Container>
+`;
+
+exports[`App component renders only Spinner when loading 1`] = `
+<Container
+  className="mb-3"
+  fluid={true}
+>
+  <Row
+    noGutters={false}
+  >
+    <Col
+      lg={
+        Object {
+          "offset": 3,
+          "span": 6,
+        }
+      }
+      md={
+        Object {
+          "offset": 2,
+          "span": 8,
+        }
+      }
+    >
+      <Container
+        className="spinner_container"
+        fluid={true}
+      >
+        <Spinner
+          animation="border"
+          variant="primary"
+        />
+      </Container>
+    </Col>
+  </Row>
+</Container>
+`;

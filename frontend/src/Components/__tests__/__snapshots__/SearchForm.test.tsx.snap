@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm matches snapshot 1`] = `
+<Form
+  className="mt-3 mb-3"
+  inline={false}
+>
+  <FormGroup
+    controlId="formPlaceName"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Place name
+    </FormLabel>
+    <FormControl
+      data-test-id="nameInput"
+      onChange={[Function]}
+      placeholder="Enter place name"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormRow>
+    <FormGroup
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "Col",
+          "render": [Function],
+        }
+      }
+      controlId="formLat"
+      md="6"
+    >
+      <FormLabel
+        column={false}
+        srOnly={false}
+      >
+        Latitude
+      </FormLabel>
+      <FormControl
+        data-test-id="latInput"
+        onChange={[Function]}
+        placeholder="Enter latitude"
+        type="text"
+        value=""
+      />
+    </FormGroup>
+    <FormGroup
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "Col",
+          "render": [Function],
+        }
+      }
+      controlId="formLng"
+      md="6"
+    >
+      <FormLabel
+        column={false}
+        srOnly={false}
+      >
+        Longitude
+      </FormLabel>
+      <FormControl
+        data-test-id="lngInput"
+        onChange={[Function]}
+        placeholder="Enter longitude"
+        type="text"
+        value=""
+      />
+    </FormGroup>
+  </FormRow>
+  <Button
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+    variant="primary"
+  >
+    Search
+  </Button>
+</Form>
+`;

@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlacesList renders a card when places contains one element 1`] = `
+<Container
+  className="mb-3 p-0"
+  fluid={true}
+>
+  <Row
+    noGutters={false}
+  >
+    <Col
+      className="mb-3"
+      key="mock-id"
+      md="6"
+      sm="12"
+    >
+      <Card
+        body={false}
+        className="h-100"
+      >
+        <CardBody>
+          <CardTitle>
+            mock-name
+          </CardTitle>
+          <CardSubtitle
+            className="mb-2 text-muted"
+          >
+            <CardText
+              data-test-id="locationText"
+            >
+              Lat: 
+              mock-lat
+               Lng:
+               
+              mock-lng
+            </CardText>
+          </CardSubtitle>
+          <CardText>
+            mock-address
+          </CardText>
+        </CardBody>
+        <CardFooter>
+          mock-provider
+        </CardFooter>
+      </Card>
+    </Col>
+  </Row>
+</Container>
+`;
+
+exports[`PlacesList renders a card when places contains one element without location 1`] = `
+<Container
+  className="mb-3 p-0"
+  fluid={true}
+>
+  <Row
+    noGutters={false}
+  >
+    <Col
+      className="mb-3"
+      key="mock-id"
+      md="6"
+      sm="12"
+    >
+      <Card
+        body={false}
+        className="h-100"
+      >
+        <CardBody>
+          <CardTitle>
+            mock-name
+          </CardTitle>
+          <CardSubtitle
+            className="mb-2 text-muted"
+          />
+          <CardText>
+            mock-address
+          </CardText>
+        </CardBody>
+        <CardFooter>
+          mock-provider
+        </CardFooter>
+      </Card>
+    </Col>
+  </Row>
+</Container>
+`;
+
+exports[`PlacesList renders multiple cards when places contains more than one elemen 1`] = `
+<Container
+  className="mb-3 p-0"
+  fluid={true}
+>
+  <Row
+    noGutters={false}
+  >
+    <Col
+      className="mb-3"
+      key="mock-id"
+      md="6"
+      sm="12"
+    >
+      <Card
+        body={false}
+        className="h-100"
+      >
+        <CardBody>
+          <CardTitle>
+            mock-name
+          </CardTitle>
+          <CardSubtitle
+            className="mb-2 text-muted"
+          />
+          <CardText>
+            mock-address
+          </CardText>
+        </CardBody>
+        <CardFooter>
+          mock-provider
+        </CardFooter>
+      </Card>
+    </Col>
+    <Col
+      className="mb-3"
+      key="mock-id2"
+      md="6"
+      sm="12"
+    >
+      <Card
+        body={false}
+        className="h-100"
+      >
+        <CardBody>
+          <CardTitle>
+            mock-name2
+          </CardTitle>
+          <CardSubtitle
+            className="mb-2 text-muted"
+          />
+          <CardText>
+            mock-address2
+          </CardText>
+        </CardBody>
+        <CardFooter>
+          mock-provider
+        </CardFooter>
+      </Card>
+    </Col>
+  </Row>
+</Container>
+`;
+
+exports[`PlacesList renders no cards when places is empty 1`] = `
+<Container
+  className="mb-3 p-0"
+  fluid={true}
+>
+  <Row
+    noGutters={false}
+  />
+</Container>
+`;
