@@ -21,8 +21,7 @@ const makeRequestHandler = ({ service }) => async (httpRequest) => {
         message: 'Name is required',
       });
 
-    const { provider, name, lat, lng } = query;
-    const response = await service.getPlaces(provider, name, lat, lng);
+    const response = await service.getPlaces(query);
     return makeHttpResponse(HTTP_STATUS.OK, response);
   }
 };
